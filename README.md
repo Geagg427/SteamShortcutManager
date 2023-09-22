@@ -1,7 +1,7 @@
 # SteamShortcutManager
 A basic C# class library for the purpose of making access of the shortcuts.vdf file used by Valve's Steam easier.  
   
-Currently Loses some information in the process, mainly flatpak and development information.  
+Currently loses some information in the process, mainly flatpak and development information.  
 Sadly, *nix systems are not supported fully yet. 
   
 Feel free to critique or contribute improved code.  
