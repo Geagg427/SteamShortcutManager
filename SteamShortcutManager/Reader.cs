@@ -15,11 +15,8 @@ namespace SteamShortcutManager
 
             Shortcut shortcut = new Shortcut();
 
-
-
             //code here stolen & modified from https://github.com/jean-knapp at https://developer.valvesoftware.com/wiki/Steam_Library_Shortcuts on 1/09/23, 
             //todo: add flatpak support 
-            //(i know nothing about flatpak)
             
             #region streamreader version
             StreamReader stream = new StreamReader(path);
@@ -116,15 +113,15 @@ namespace SteamShortcutManager
 
 
             #endregion
-            
-           
+
+
 
             //todo: optimise stream reader to not increment by character, but increment until it hits a specific character that is the end of a string ( \u0000? )
-            
-      
 
 
-            return Shortcuts;
+
+            Shortcuts.RemoveAt(0);
+            return Shortcuts; //Uncertain of cause,but a random null entry is at the beginning
         }
 
         public static DateTime ConvertHexDateToDateTime(string HexDate)

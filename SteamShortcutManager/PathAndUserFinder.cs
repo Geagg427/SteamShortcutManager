@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
-namespace ConsoleApp1
+namespace SteamShortcutManager
 {
     public class PathAndUserFinder
     {
@@ -73,7 +73,7 @@ namespace ConsoleApp1
             string returnString = ChooseUsers(userNum, usersPath, UserIds) + @"\config\shortcuts.vdf";
             returnString = returnString.Replace(@"\\", "\\");
             returnString = returnString.Replace("/", @"\");
-            Console.WriteLine(returnString);
+            //Console.WriteLine(returnString);
             return ValidateFile(returnString);
         }
 

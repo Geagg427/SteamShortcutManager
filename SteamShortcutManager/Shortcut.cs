@@ -48,7 +48,7 @@ namespace SteamShortcutManager
                        $"  Shortcut Path:{ShortcutPath ?? "not yet implemented"}\n" +
                        $"  Launch Options: {LaunchOptions ?? "not yet implemented"}\n" +
                        $"  is hidden?: not yet implemented\n" +
-                       $"  Last Play Time: {Reader.ConvertHexDateToDateTime(LastPlayTime)}\n" + //+ " or in computer Terms: " + Encoding.ASCII.GetBytes(LastPlayTime)[2].ToString("X") + Encoding.ASCII.GetBytes(LastPlayTime)[3].ToString("X")}\n" +
+                       $"  Last Play Time: {Reader.ConvertHexDateToDateTime(LastPlayTime)}\n" +
                        $"  Icon: {Icon} \n\n");
         }
     }
